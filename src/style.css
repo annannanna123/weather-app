@@ -1,0 +1,76 @@
+h1 {
+  font-size: 48px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-card {
+  margin: 20px auto;
+  max-width: 720px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.btn-info {
+  color: #fff;
+}
+
+.btn-info:hover {
+  color: #fff;
+}
+
+.current-weather {
+  margin: 20px auto;
+}
+
+.current-time,
+.current-conditions,
+.forecast {
+  font-size: 20px;
+}
+
+.current-time,
+.current-conditions {
+  padding-left: 10px;
+}
+
+.current-conditions {
+  text-transform: capitalize;
+}
+
+.current-weather-icon {
+  font-size: 90px;
+}
+
+.current-temperature-unit {
+  font-size: 36px;
+  position: relative;
+  top: -40px;
+}
+
+.precipitation,
+.humidity,
+.wind {
+  font-size: 16px;
+}
+
+.day {
+  font-size: 24px;
+}
+
+.weather-icon {
+  font-size: 70px;
+}
+
+.today {
+  border: 1px solid rgba(209, 252, 252, 0.5);
+  background: rgba(209, 252, 252, 0.5);
+}
+
+.future-day {
+  border: none;
+}
