@@ -6,8 +6,15 @@ a {
   text-decoration: none;
 }
 
+footer {
+  display: block;
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 0 6px;
+}
+
 .app-card {
-  margin: 20px auto;
+  margin: 20px auto 0;
   max-width: 720px;
 }
 
@@ -44,12 +51,14 @@ a {
 
 .current-weather-icon {
   font-size: 90px;
+  position: relative;
+  top: -20px;
 }
 
 .current-temperature-unit {
   font-size: 36px;
   position: relative;
-  top: -40px;
+  top: -38px;
 }
 
 .precipitation,
