@@ -27,13 +27,18 @@ function displayCurrentTemperature(response) {
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${currentCity}`;
 
-  let currentTemp = Math.round(response.data.temperature.current);
-  let currentTemperature = document.querySelector("#current-temperature");
-  currentTemperature.innerHTML = `${currentTemp}`;
-
   let currentDescription = response.data.condition.description;
   let currentConditions = document.querySelector("#current-conditions");
   currentConditions.innerHTML = `${currentDescription}`;
+
+  let weatherIconUrl = response.data.condition.icon_url;
+  let weatherIcon = document.querySelector("#current-weather-icon");
+  weatherIcon.src = `${weatherIconUrl}`;
+  weatherIcon.alt = `${currentDescription}`;
+
+  let currentTemp = Math.round(response.data.temperature.current);
+  let currentTemperature = document.querySelector("#current-temperature");
+  currentTemperature.innerHTML = `${currentTemp}`;
 
   let currentHumidity = response.data.temperature.humidity;
   let humidity = document.querySelector("#humidity");
