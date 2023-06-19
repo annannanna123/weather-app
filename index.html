@@ -45,18 +45,18 @@
           </form>
           <div class="row current-weather">
             <div class="col-12">
-              <h1>Toronto</h1>
+              <h1></h1>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-3">
-              <p class="current-time" id="current-time">Saturday 07:30</p>
-              <p class="current-conditions" id="current-conditions">Sunny</p>
+              <p class="current-time" id="current-time"></p>
+              <p class="current-conditions" id="current-conditions"></p>
             </div>
             <div class="col-sm-6 text-center">
               <p class="current-weather-icon">
                 <i class="fa-solid fa-sun"></i>
-                <span class="temperature" id="current-temperature">10</span>
+                <span class="temperature" id="current-temperature"></span>
                 <span class="current-temperature-unit">
                   <a href="#" id="celsius-link" class="active">°C</a> |
                   <a href="#" id="fahrenheit-link">°F</a>
@@ -64,9 +64,8 @@
               </p>
             </div>
             <div class="col-sm-3">
-              <p class="precipitation">Precipitation: 22%</p>
-              <p class="humidity">Humidity: 90%</p>
-              <p class="wind">Wind: 5km/h</p>
+              <p class="humidity">Humidity: <span id="humidity"></span>%</p>
+              <p class="wind">Wind: <span id="wind-speed"></span>km/h</p>
             </div>
           </div>
           <div class="row row-cols-1 row-cols-md-5 g-3">

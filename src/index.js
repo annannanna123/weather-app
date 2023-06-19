@@ -34,6 +34,15 @@ function displayCurrentTemperature(response) {
   let currentDescription = response.data.condition.description;
   let currentConditions = document.querySelector("#current-conditions");
   currentConditions.innerHTML = `${currentDescription}`;
+
+  let currentHumidity = response.data.temperature.humidity;
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = `${currentHumidity}`;
+
+  let currentWindSpeed = Math.round(response.data.wind.speed);
+  let wind = document.querySelector("#wind-speed");
+  wind.innerHTML = `${currentWindSpeed}`;
+  console.log(response.data);
 }
 
 function searchCity(event) {
@@ -104,6 +113,7 @@ function convertToFahrenheit(event) {
 }
 
 displayCurrentTime();
+retrievePosition();
 
 let citySearchForm = document.querySelector("#city-search-form");
 citySearchForm.addEventListener("submit", searchCity);

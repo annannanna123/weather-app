@@ -50,7 +50,7 @@ footer {
   padding-left: 10px;
 }
 
-.current-conditions {
+.current-conditions::first-letter {
   text-transform: capitalize;
 }
 
@@ -66,7 +66,6 @@ footer {
   top: -38px;
 }
 
-.precipitation,
 .humidity,
 .wind {
   font-size: 16px;
