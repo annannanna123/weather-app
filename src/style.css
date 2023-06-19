@@ -13,6 +13,11 @@ footer {
   padding: 0 6px;
 }
 
+.active {
+  color: #212529;
+  cursor: default;
+}
+
 .app-card {
   margin: 20px auto 0;
   max-width: 720px;
