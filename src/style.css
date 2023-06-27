@@ -56,14 +56,33 @@ footer {
 
 .current-weather-icon {
   font-size: 90px;
+  line-height: normal;
+  display: block;
+  margin: 0 auto;
   position: relative;
-  top: -20px;
+  top: -28px;
+}
+
+div.col-sm-4.text-center {
+  margin: 0;
+  padding: 0;
+}
+
+#current-temperature {
+  font-size: 90px;
+  line-height: normal;
+  position: relative;
+  top: -18px;
 }
 
 .current-temperature-unit {
   font-size: 36px;
   position: relative;
-  top: -38px;
+  top: -55px;
+}
+
+.forecast {
+  margin: 0 10px;
 }
 
 .humidity,
